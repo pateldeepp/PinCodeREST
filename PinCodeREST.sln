@@ -12,6 +12,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B6FB6D
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PincodeREST.Common", "PincodeREST.Common\PincodeREST.Common.csproj", "{8C4D8763-7DD8-4024-ABE2-27845571A133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PincodeREST.Model", "PincodeREST.Model\PincodeREST.Model.csproj", "{239F4935-C72F-497E-8A0F-E3A13FD68338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PincodeREST.DAL", "PincodeREST.DAL\PincodeREST.DAL.csproj", "{04037ABF-E7FA-47E2-848A-5E95E8C21F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PincodeREST.Repository", "PincodeREST.Repository\PincodeREST.Repository.csproj", "{E90DA2ED-9EE7-4012-8419-979392588602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PincodeREST.Service", "PincodeREST.Service\PincodeREST.Service.csproj", "{CEC04505-3D8A-49ED-94F3-3FF9A7A12830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +32,26 @@ Global
 		{11875037-B392-43EA-859C-C3C3370002D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11875037-B392-43EA-859C-C3C3370002D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11875037-B392-43EA-859C-C3C3370002D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4D8763-7DD8-4024-ABE2-27845571A133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4D8763-7DD8-4024-ABE2-27845571A133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4D8763-7DD8-4024-ABE2-27845571A133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4D8763-7DD8-4024-ABE2-27845571A133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239F4935-C72F-497E-8A0F-E3A13FD68338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239F4935-C72F-497E-8A0F-E3A13FD68338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239F4935-C72F-497E-8A0F-E3A13FD68338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239F4935-C72F-497E-8A0F-E3A13FD68338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04037ABF-E7FA-47E2-848A-5E95E8C21F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04037ABF-E7FA-47E2-848A-5E95E8C21F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04037ABF-E7FA-47E2-848A-5E95E8C21F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04037ABF-E7FA-47E2-848A-5E95E8C21F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90DA2ED-9EE7-4012-8419-979392588602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90DA2ED-9EE7-4012-8419-979392588602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90DA2ED-9EE7-4012-8419-979392588602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90DA2ED-9EE7-4012-8419-979392588602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC04505-3D8A-49ED-94F3-3FF9A7A12830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC04505-3D8A-49ED-94F3-3FF9A7A12830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC04505-3D8A-49ED-94F3-3FF9A7A12830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC04505-3D8A-49ED-94F3-3FF9A7A12830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

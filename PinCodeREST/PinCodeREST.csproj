@@ -41,6 +41,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -198,7 +208,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="CastleDI\DependencyInstaller.cs" />
+    <Compile Include="CastleDI\WindsorActivator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -277,6 +290,28 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PincodeREST.Common\PincodeREST.Common.csproj">
+      <Project>{8c4d8763-7dd8-4024-abe2-27845571a133}</Project>
+      <Name>PincodeREST.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PincodeREST.DAL\PincodeREST.DAL.csproj">
+      <Project>{04037abf-e7fa-47e2-848a-5e95e8c21f0f}</Project>
+      <Name>PincodeREST.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PincodeREST.Model\PincodeREST.Model.csproj">
+      <Project>{239f4935-c72f-497e-8a0f-e3a13fd68338}</Project>
+      <Name>PincodeREST.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PincodeREST.Repository\PincodeREST.Repository.csproj">
+      <Project>{e90da2ed-9ee7-4012-8419-979392588602}</Project>
+      <Name>PincodeREST.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PincodeREST.Service\PincodeREST.Service.csproj">
+      <Project>{cec04505-3d8a-49ed-94f3-3ff9a7a12830}</Project>
+      <Name>PincodeREST.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
